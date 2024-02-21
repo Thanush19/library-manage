@@ -10,12 +10,16 @@ const Pool = pg.Pool;
 dotenv.config();
 
 
+// const pool = new Pool({
+//     host: process.env.HOST,
+//     port: process.env.PORT,
+//     user: process.env.USER,
+//     database: process.env.DB,
+//     password:process.env.PASSWORD
+// })
+
 const pool = new Pool({
-    host: process.env.HOST,
-    port: process.env.PORT,
-    user: process.env.USER,
-    database: process.env.DB,
-    password:process.env.PASSWORD
+  connectionString: process.env.POSTGRES_URL + "?sslmode=require",
 })
 
 
