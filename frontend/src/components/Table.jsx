@@ -41,7 +41,7 @@ const Table = () => {
 
   const { data: books } = useQuery({
     queryFn: async () => {
-      const res = await axios.get("http://localhost:8000/getBooks");
+      const res = await axios.get("https://taskhosting.onrender.com/getBooks");
 
       //   console.log(res.data);
       return res.data;
