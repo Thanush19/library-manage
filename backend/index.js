@@ -45,10 +45,10 @@ const createConnection = async () => {
 createConnection()
 
 app.use(cors({
-    origin: [
-        'http://localhost:5173',
-        'https://taskhosting.vercel.app/'
-    ]
+    // origin: [
+    //     'http://localhost:5173',
+    //     'https://taskhosting.vercel.app/'
+    // ]
 }))
 
 app.use(express.json())
