@@ -146,7 +146,7 @@ const Table = () => {
         </table>
       )}
       <Pagination
-        totalPost={books.length}
+        totalPost={books?.length}
         postPerPage={postPerPage}
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
